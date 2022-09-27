@@ -3,8 +3,37 @@ package methods;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Program her zaman main'i baz aldığı için, hemen alttaki çağırma kodunu
+		// yazmazsak sonuç alamayız.
+		sayiBulmaca();
+		sayiBulmaca();
+		sayiBulmaca();
+		sayiBulmaca();
 
 	}
 
+	public static void sayiBulmaca() {
+		int[] sayilar = new int[] { 1, 2, 5, 7, 9, 0 };
+		int aranacak = 6;
+		boolean varMi = false;
+
+		for (int sayi : sayilar) {
+			if (sayi == aranacak) {
+				varMi = true;
+				break;
+			}
+		}
+		//String mesaj = "";
+		if (varMi) {
+			mesajVer("Sayı mevcuttur: " + aranacak);
+		} else {
+			mesajVer("Sayı mevcuttur değildir: " + aranacak);
+		}
+
+	}
+
+	public static void mesajVer(String mesaj) {
+		System.out.println(mesaj);
+
+	}
 }
