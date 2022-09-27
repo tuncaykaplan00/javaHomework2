@@ -29,4 +29,4 @@ public class Main {
 	public static String sehirVer() {
 		return "Ankara";
 	}
-}
+} 
