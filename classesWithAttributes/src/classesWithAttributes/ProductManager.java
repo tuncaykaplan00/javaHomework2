@@ -6,4 +6,4 @@ public class ProductManager {
 		System.out.println("Ürün eklendi " + product.name);
 	}
 
-}
+} 
